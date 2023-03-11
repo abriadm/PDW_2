@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Menggunakan Icon di font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Menggunakan Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Eksternal CSS link -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Card</title>
+
+    <!-- Internal CSS -->
+    <style>
+      img {
+        border-radius: 50%;
+        width: 40%;
+      }
+      h1 {
+        font-family: "Tilt Warp", cursive;
+      }
+      .h1 {
+        transition-duration: 3s;
+        transition-timing-function: ease-in-out;
+      }
+      .h1:hover {
+        text-shadow: 0 0 3px white, 0 0 15px #0000FF, 0 0 5px yellow;
+        color: white;
+        cursor: pointer;
+      }
+      h2 {
+        font-family: "Tilt Warp", cursive;
+        margin: 0px;
+      }
+      p {
+        font-family: "Inconsolata", monospace;
+      }
+      .caption {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        margin-left: 15px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      i {
+        color: #ECF2FF;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-left">
+        <h1>Fine Art</h1>
+        <img src="assets/monalisa.jpg" alt="Monalisa" /> <!-- Menambah gambar Monalisa -->
+        <div class="caption">
+          <h2>Monalisa</h2>
+          <p style="width: 75%"> <!-- Inline CSS -->
+            The Mona Lisa is a half-length portrait painting by Italian artist
+            Leonardo da Vinci
+          </p>
+        </div>
+      </div>
+      <div class="card-right"> <!-- Membuat class "card-right" untuk eksternal dan internal CSS -->
+        <h1 class="h1">History</h1>
+        <div class="card-list">
+          <div class="card-item">
+            <i class="fa-solid fa-newspaper"></i>
+            <a href="#">Description</a>
+          </div>
+          <div class="card-item">
+            <i class="fa-sharp fa-solid fa-landmark"></i>
+            <a href="#">History</a>
+          </div>
+          <div class="card-item">
+            <i class="fa-solid fa-people-carry-box"></i>
+            <a href="#">Conservation</a>
+          </div>
+          <div class="card-item">
+            <i class="fa-brands fa-pied-piper-hat"></i>
+            <a href="#">Legacy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
