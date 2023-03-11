@@ -1,3 +1,3 @@
 # Praktikum 2
 Tugas praktikum CSS
-> link
+> Website [preview.](https://abriadm.github.io/PDW_2/)
